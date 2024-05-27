@@ -110,6 +110,3 @@ Project Link: [https://github.com/AntoineMeheut/PythonProfilingCode](https://git
 [issues-url]: https://github.com/AntoineMeheut/PythonProfilingCode/issues
 [license-shield]: https://img.shields.io/github/license/AntoineMeheut/PythonProfilingCode
 [license-url]: https://github.com/AntoineMeheut/PythonProfilingCode/blob/main/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/antoine-méheut-38610929b/
-[product-screenshot]: images/kpa-5875-internetstiftelsen-2020-1-384x216.jpg
