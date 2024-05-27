@@ -108,5 +108,5 @@ Project Link: [https://github.com/AntoineMeheut/PythonProfilingCode](https://git
 [stars-url]: https://github.com/AntoineMeheut/PythonProfilingCode/stargazers
 [issues-shield]: https://img.shields.io/github/issues/AntoineMeheut/PythonProfilingCode
 [issues-url]: https://github.com/AntoineMeheut/PythonProfilingCode/issues
-[license-shield]: https://img.shields.io/github/license/AntoineMeheut/PythonProfilingCode
-[license-url]: https://github.com/AntoineMeheut/PythonProfilingCode/blob/main/LICENSE
+[license-shield]: https://img.shields.io/github/license/AntoineMeheut/blogame
+[license-url]: https://github.com/AntoineMeheut/blogame/blob/master/LICENSE
