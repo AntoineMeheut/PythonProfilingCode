@@ -1,10 +1,12 @@
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/AntoineMeheut/PythonProfilingCode)
 <!-- PROJECT SHIELDS -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![GNU License][license-shield]][license-url]
+
+<!-- PROJECT CODESPACES -->
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/AntoineMeheut/PythonProfilingCode)
 
 <!-- PROJECT LOGO -->
 <br />
