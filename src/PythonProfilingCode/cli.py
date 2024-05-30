@@ -22,28 +22,28 @@ def main():
     ramsizegwp = 3
 
     """Execution and calculation of bad code practice"""
-    avoidlistcomprehensioniniterationsbad(100000)
+    avoidlistcomprehensioniniterationsbad(100000000)
     cpuunits = psutil.cpu_percent(1)
     ramsize = psutil.swap_memory().used
     servermanufgwp = servertypegwp + cpuunits * cpubasegwp + ramsize * ramsizegwp
     console.print(servermanufgwp)
 
     """Execution and calculation of good code practice"""
-    avoidlistcomprehensioniniterationsgood(100000)
+    avoidlistcomprehensioniniterationsgood(100000000)
     cpuunits = psutil.cpu_percent(1)
     ramsize = psutil.swap_memory().used
     servermanufgwp = servertypegwp + cpuunits * cpubasegwp + ramsize * ramsizegwp
     console.print(servermanufgwp)
 
     """Execution and calculation of bad code practice"""
-    console.print(avoiddoublequotecheckbad(5))
+    console.print(avoiddoublequotecheckbad(100000000))
     cpuunits = psutil.cpu_percent(1)
     ramsize = psutil.swap_memory().used
     servermanufgwp = servertypegwp + cpuunits * cpubasegwp + ramsize * ramsizegwp
     console.print(servermanufgwp)
 
     """Execution and calculation of good code practice"""
-    console.print(avoiddoublequotecheckgood(5))
+    console.print(avoiddoublequotecheckgood(100000000))
     cpuunits = psutil.cpu_percent(1)
     ramsize = psutil.swap_memory().used
     servermanufgwp = servertypegwp + cpuunits * cpubasegwp + ramsize * ramsizegwp
