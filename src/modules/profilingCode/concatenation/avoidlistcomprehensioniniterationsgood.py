@@ -2,12 +2,12 @@
 import sys
 import src.modules.utils.logger as utils
 
-__all__ = ['methodejoin1']
+__all__ = ['avoidlistcomprehensioniniterationsgood']
 
 
-def methodejoin1(n):
+def avoidlistcomprehensioniniterationsgood(n: object) -> object:
     """
-    Function methodejoin1 which allow to concatenate the character string 'Name' n times.
+    Function avoidlistcomprehensioniniterationsgood
 
     Exception management :
     If any exception : log the trace of the exception stack and stop the execution of the programme
@@ -19,17 +19,17 @@ def methodejoin1(n):
     """
     logging = utils.setup_logging()
     logger = logging.getLogger(__name__)
-    logger.info('Start of function methodejoin1, input n (number of occurrences) = %s', str(n))
+    logger.info('Start of function avoidlistcomprehensioniniterationsgood, input n (number of occurrences) = %s', str(n))
 
     try:
         result = ''
         try:
-            for i in range(n):
+            for var in (var2 for var2 in range(n)):
                 result += 'Name'
             return result
         except Exception as e:
-            logger.error('Exception : problem during methodejoin1 = %s', str(n))
+            logger.error('Exception : problem during avoidlistcomprehensioniniterationsgood = %s', str(n))
             sys.exit()
     except Exception as e:
-        logger.error('Exception : problem during methodejoin1 = %s', str(n))
+        logger.error('Exception : problem during avoidlistcomprehensioniniterationsgood = %s', str(n))
         sys.exit()

@@ -2,12 +2,12 @@
 import sys
 import src.modules.utils.logger as utils
 
-__all__ = ['methodejoin3']
+__all__ = ['avoidlistcomprehensioniniterationsbad']
 
 
-def methodejoin3(n):
+def avoidlistcomprehensioniniterationsbad(n):
     """
-    Function methodejoin3 which allow to calculate the first n rows of the multiplication table by 10.
+    Function avoidlistcomprehensioniniterationsbad
 
     Exception management :
     If any exception : log the trace of the exception stack and stop the execution of the programme
@@ -19,17 +19,18 @@ def methodejoin3(n):
     """
     logging = utils.setup_logging()
     logger = logging.getLogger(__name__)
-    logger.info('Start of function methodejoin3, input n (number of occurrences) = %s', str(n))
+    logger.info('Start of function avoidlistcomprehensioniniterationsbad, input n (number of occurrences) = %s', str(n))
 
     try:
         result = ''
         try:
-            for i in range(n):
-                result += str(i) + ' x 10 = ' + str(i * 10) + ' ; '
+            for var in [var2 for var2 in range(n)]:
+                result += 'Name'
             return result
         except Exception as e:
-            logger.error('Exception : problem during methodejoin3 = %s', str(n))
+            logger.error('Exception : problem during avoidlistcomprehensioniniterationsbad = %s', str(n))
             sys.exit()
     except Exception as e:
-        logger.error('Exception : problem during methodejoin3 = %s', str(n))
+        logger.error('Exception : problem during avoidlistcomprehensioniniterationsbad = %s', str(n))
         sys.exit()
+

@@ -1,10 +1,12 @@
 """Console script for PythonProfilingCode."""
 
 import typer
+import psutil
 from rich.console import Console
-from src.modules.profilingCode.concatenation.methodejoin1 import methodejoin1
-from src.modules.profilingCode.concatenation.methodejoin2 import methodejoin2
-from src.modules.profilingCode.concatenation.methodejoin3 import methodejoin3
+from src.modules.profilingCode.concatenation.avoidlistcomprehensioniniterationsbad import avoidlistcomprehensioniniterationsbad
+from src.modules.profilingCode.concatenation.avoidlistcomprehensioniniterationsgood import avoidlistcomprehensioniniterationsgood
+from src.modules.profilingCode.concatenation.avoiddoublequotecheckbad import avoiddoublequotecheckbad
+from src.modules.profilingCode.concatenation.avoiddoublequotecheckgood import avoiddoublequotecheckgood
 
 app = typer.Typer()
 console = Console()
@@ -13,9 +15,39 @@ console = Console()
 @app.command()
 def main():
     """Console script for PythonProfilingCode."""
-    console.print(methodejoin1(5))
-    console.print(methodejoin2(5))
-    console.print(methodejoin3(5))
+    """Algorithm servermanufgwp(kgCO2eq) = servertypegwp(kgCO2eq) + cpuunits(unit) x cpubasegwp(kgCO2eq/unit) + ramsize(GB) x ramsizegwp(kgCO2eq/GB)"""
+    """MacBook M2 benchmarks"""
+    servertypegwp = 147
+    cpubasegwp = 150
+    ramsizegwp = 3
+
+    """Execution and calculation of bad code practice"""
+    avoidlistcomprehensioniniterationsbad(100000)
+    cpuunits = psutil.cpu_percent(1)
+    ramsize = psutil.swap_memory().used
+    servermanufgwp = servertypegwp + cpuunits * cpubasegwp + ramsize * ramsizegwp
+    console.print(servermanufgwp)
+
+    """Execution and calculation of good code practice"""
+    avoidlistcomprehensioniniterationsgood(100000)
+    cpuunits = psutil.cpu_percent(1)
+    ramsize = psutil.swap_memory().used
+    servermanufgwp = servertypegwp + cpuunits * cpubasegwp + ramsize * ramsizegwp
+    console.print(servermanufgwp)
+
+    """Execution and calculation of bad code practice"""
+    console.print(avoiddoublequotecheckbad(5))
+    cpuunits = psutil.cpu_percent(1)
+    ramsize = psutil.swap_memory().used
+    servermanufgwp = servertypegwp + cpuunits * cpubasegwp + ramsize * ramsizegwp
+    console.print(servermanufgwp)
+
+    """Execution and calculation of good code practice"""
+    console.print(avoiddoublequotecheckgood(5))
+    cpuunits = psutil.cpu_percent(1)
+    ramsize = psutil.swap_memory().used
+    servermanufgwp = servertypegwp + cpuunits * cpubasegwp + ramsize * ramsizegwp
+    console.print(servermanufgwp)
 
 
 if __name__ == "__main__":
