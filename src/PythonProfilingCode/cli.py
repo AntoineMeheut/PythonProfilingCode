@@ -36,14 +36,14 @@ def main():
     console.print(servermanufgwp)
 
     """Execution and calculation of bad code practice"""
-    console.print(avoiddoublequotecheckbad(100000000))
+    avoiddoublequotecheckbad(100000000)
     cpuunits = psutil.cpu_percent(1)
     ramsize = psutil.swap_memory().used
     servermanufgwp = servertypegwp + cpuunits * cpubasegwp + ramsize * ramsizegwp
     console.print(servermanufgwp)
 
     """Execution and calculation of good code practice"""
-    console.print(avoiddoublequotecheckgood(100000000))
+    avoiddoublequotecheckgood(100000000)
     cpuunits = psutil.cpu_percent(1)
     ramsize = psutil.swap_memory().used
     servermanufgwp = servertypegwp + cpuunits * cpubasegwp + ramsize * ramsizegwp
